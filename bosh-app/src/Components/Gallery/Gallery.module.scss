@@ -1,0 +1,40 @@
+.gallery {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  min-height: 300px;
+  margin-top: 4ch;
+  margin-bottom: 4ch;
+}
+
+.image {
+  width: 100%;
+  height: 300px; 
+  object-fit: contain; 
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.paginationDots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot {
+  width: 24px;
+  height: 4px;
+  border-radius: 9999px;
+  background-color: rgba(128, 128, 128, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &.active {
+    background-color: #3b82f6;
+  }
+}

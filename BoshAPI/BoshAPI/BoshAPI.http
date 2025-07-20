@@ -1,0 +1,6 @@
+@BoshAPI_HostAddress = http://localhost:5169
+
+GET {{BoshAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

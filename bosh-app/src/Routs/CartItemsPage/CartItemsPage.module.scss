@@ -1,0 +1,70 @@
+.gridView {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.listView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+.toggleButton {
+  padding: 0.6rem 1.2rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 4ch;
+
+  &:hover {
+    background-color: #4338ca; 
+    transform: scale(1.03);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.sortingDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+.sortSelect {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  min-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .gridView {
+    grid-template-columns: 1fr;
+  }
+  .toggleButton
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: block;
+    margin-top: 2ch;
+  }
+}

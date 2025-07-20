@@ -1,0 +1,95 @@
+.cart {
+ width: 200px;
+ height: auto;
+ min-height: 400px;
+ padding: .8em;
+ background: #f5f5f5;
+ position: relative;
+ overflow: visible;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ display: flex;
+ flex-direction: column;
+}
+
+.cartImgWrap {
+  width: 100%;
+  height: 200px;              /* or aspect-ratio: 1 / 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: .5rem;
+  overflow: hidden;            /* optional */
+}
+
+.cartImgWrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;         /* show whole image */
+}
+
+.textTitle, .textBody {
+  word-wrap: break-word;
+}
+
+.cartInfo {
+ padding-top: 2%;
+}
+
+.textTitle {
+ font-weight: 900;
+ font-size: 1.2em;
+ line-height: 1.5;
+}
+
+.textBody {
+ font-size: .9em;
+ padding-bottom: 10px;
+}
+
+.cartFooter {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ //padding-top: 5px;
+ border-top: 1px solid #ddd;
+ margin-top: auto;
+}
+
+.priceTitle {
+ font-weight: 900;
+ font-size: 1.2em;
+ line-height: 1.5;
+
+}
+
+.cartActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.quantityInput {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addButton {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}

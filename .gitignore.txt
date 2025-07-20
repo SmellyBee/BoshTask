@@ -1,0 +1,16 @@
+# Root
+node_modules/
+.env
+dist/
+
+# React (bosh-app)
+bosh-app/node_modules
+bosh-app/.env
+
+# .NET (BoshAPI)
+BoshAPI/bin/
+BoshAPI/obj/
+BoshAPI/.vs/
+BoshAPI/.vscode/
+BoshAPI/appsettings.Development.json
+BoshAPI/appsettings.Local.json
